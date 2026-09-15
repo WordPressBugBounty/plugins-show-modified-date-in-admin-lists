@@ -1,10 +1,10 @@
 ﻿=== Show modified Date in admin lists ===
 Contributors: apasionados
 Donate link: http://apasionados.es/
-Tags: modified date, last modified, last updated, modified, modified time, page modified, post modified, post update, page update
+Tags: modified date, last modified, last updated, post update, page update
 Requires at least: 3.0.1
-Tested up to: 6.9
-Stable tag: 1.5
+Tested up to: 7.1
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,9 @@ Of course we do. ;-)
 
 == Changelog ==
 
+= 1.6 (Release Date - 15 September 2026) =
+* Changed Modified Date sorting so the most recently modified content appears first on the initial click.
+
 = 1.5 (Release Date - 22 January 2026) =
 * Solved notice since WordPress 6.7.0: Function _load_textdomain_just_in_time was called incorrectly. Translation loading for the show-modified-date-in-admin-lists domain was triggered too early.
 
@@ -83,8 +86,8 @@ Of course we do. ;-)
 
 == Upgrade Notice ==
 
-= 1.5 =
-UPDATED: Solved notice since WordPress 6.7.0: Function _load_textdomain_just_in_time was called incorrectly.
+= 1.6 =
+UPDATED: Changed Modified Date sorting so the most recently modified content appears first on the initial click.
 
 == Contact ==
 

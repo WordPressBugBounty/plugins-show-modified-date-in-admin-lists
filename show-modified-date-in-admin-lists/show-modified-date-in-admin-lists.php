@@ -3,7 +3,7 @@
 Plugin Name: Show modified Date in admin lists
 Plugin URI: https://apasionados.es
 Description: Shows a new, sortable, column with the modified date in the lists of pages and posts in the WordPress admin panel. It also shows the username that did the last update.
-Version: 1.5
+Version: 1.6
 Author: Apasionados.es
 Author URI: https://apasionados.es
 License: GPL2
@@ -49,7 +49,7 @@ add_action( 'manage_pages_custom_column', 'modified_column_display', 10, 2 );
 add_action( 'manage_media_custom_column', 'modified_column_display', 10, 2 );
 
 function modified_column_register_sortable( $columns ) {
-	$columns['Modified'] = 'modified';
+	$columns['Modified'] = array( 'modified', true );
 	return $columns;
 }
 add_filter( 'manage_edit-post_sortable_columns', 'modified_column_register_sortable' );
